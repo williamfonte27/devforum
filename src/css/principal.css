@@ -1,0 +1,373 @@
+/* FORUM DEV - Principal CSS Style
+   v1.0 | 20190803
+*/
+
+* {
+    box-sizing: border-box; 
+}   
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End reset CSS */
+body{
+    background-image: url(../images/backg.jpg);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+
+.header{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.logo{
+    width: 20%;
+    background: #fff
+}
+
+.textoLogo{
+    font-family: 'Jockey One', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    color: #7159C1;
+}
+
+.header form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header input{
+    margin-left: 0.6rem;
+}
+
+.header .input-group{
+    background: #333;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.header .input-group span.fa {
+    font-size: 16px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    width: 6%;
+    padding: 1rem;
+    color: #fff;
+}
+
+.header input[type="email"]{
+    width: 300px;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    letter-spacing: 2px;
+    padding: 0.8rem 0.8rem;
+    background: #333;
+}
+
+.header input[type="password"]{
+    width: 200px;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    letter-spacing: 2px;
+    padding: 0.8rem 0.8rem;
+    background: #333;
+}
+
+.header input[type="submit"]{
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    letter-spacing: 2px;
+    padding: 0.8rem 0.8rem;
+    background: #7159C1; 
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.mid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.esq{
+    width: 50%;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.dir{
+    width: 40%;
+    padding: 1rem;
+    display: block;
+    justify-content: space-around; 
+    background: #7159C1;  
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.dir h1{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dir form{
+    display: inline-block;
+    width: 100%;
+
+}
+
+.dir .login spam a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.dir .login a:hover{
+    text-decoration: underline;
+}
+
+.dir .input-group{
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 1rem;
+}
+
+.dir .input-group span.fa {
+
+    vertical-align: middle;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    width: 6%;
+    padding: 1rem;
+    color: #000;
+}
+
+.dir spam{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.dir input[type="text"]{
+
+    width: 90%;
+    outline: none;
+    font-size: 1rem;
+    color: #7159C1;
+    border: none;
+    letter-spacing: 2px;
+    padding: 0.8rem 0.8rem;
+    background: #fff;
+}
+
+.dir input[type="email"]{
+
+    width: 90%;
+    outline: none;
+    font-size: 1rem;
+    color: #7159C1;
+    border: none;
+    letter-spacing: 2px;
+    padding: 0.8rem 0.8rem;
+    background: #fff;
+}
+
+.dir input[type="password"]{
+    width: 90%;
+    outline: none;
+    font-size: 1rem;
+    color: #7159C1;
+    border: none;
+    letter-spacing: 2px;
+    padding: 0.8rem 0.8rem;
+    background: #fff;
+}
+
+.btn{
+    display: inline-block;
+    width: auto;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    letter-spacing: 2px;
+    padding: 1rem 1rem;
+    background: #000; 
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.publicacao{
+    padding: 0.5%;
+    margin-bottom: 2%;
+    background-color: #f8f9f9 ;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 1.4rem;
+    margin-bottom: 1rem;
+    color: #7159C1;
+}
+
+.publicacao p{
+    color: #999;
+    text-align: justify;
+    margin: 1rem 0 1rem 0;
+}
+
+.TituloPubli{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.smallPubli {
+    color: #000;
+    font-size: 1rem;
+}
+
+.smallPubli a{
+    text-decoration: none;
+    color: #7159C1;
+}
+
+.smallPubli a:hover{
+    text-decoration: underline;
+}
+
+form .login{
+    display: block;
+}
+
+.footer p{
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.clearfix {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+
+  @media screen and (max-width: 718px) {
+
+    body{
+        background-position: center;
+        background-repeat: unset;
+        background-size: inherit;
+    }
+
+    .header{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header .input-group{
+        width: 90%;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+
+    .mid{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .esq{
+        width: 100%;
+        padding: 1rem;
+        background-color: #fff;
+        margin-bottom: 1rem;
+    }
+    
+    .dir{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        background: #fff;
+    }
+
+    .dir input{width: 100%;}
+
+    .btn{width: 100%;}
+  }
